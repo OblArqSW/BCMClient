@@ -1,0 +1,77 @@
+PASOS:
+
+1 - Copiar los archivos META_INF, WEB_INF y index.html que están en la ruta:
+
+ C:\Users\[usuario]\[directorio]\[carpeta]\[proyecto_WAR]\build\web
+
+2 - Pegarlos en:
+
+ C:\Users\[usuario]\[directorio]\[carpeta]\[proyecto_WAR]\web
+
+3 - Clean & Build de [proyecto_WAR]
+
+4 - Clean & Build de [proyecto_EJB]
+
+5 - Borrar de los Servers las app están deployadas
+
+5 - Deploy de [proyecto_EJB]
+
+6 - Deploy de [proyecto_WAR]
+
+7 - Fijarse si en el mySQL están las tablas
+
+8 - Ingresar valores
+
+9 - Entrar en el Postman y poner lo siguiente:
+
+ GET: 
+	//TRAE TODO
+	- localhost:8080/[proyecto_WAR]/[@javax.ws.rs.ApplicationPath("nombre")]/[@Path("[nombre]")]/?[col1]=int
+	//TRAE SÓLO EL INDICADO
+      	- localhost:8080/[proyecto_WAR]/[@javax.ws.rs.ApplicationPath("nombre")]/[@Path("[nombre]")]/int
+
+ PUT:
+
+	- localhost:8080/[proyecto_WAR]/[@javax.ws.rs.ApplicationPath("nombre")]/[@Path("[nombre]")]/?[col1]=int&[col2]=String
+
+NOTAS:
+
+- Si las carpetas META_INF y/o WEB_INF NO están creadas, crearlas
+- @javax.ws.rs.ApplicationPath("nombre") ubicado en ApplicationConfig.java
+- @Path("[nombre]") ubicado en [nombre]Resource.java
+
+EJEMPLO CON EL TALLER:
+
+1 - Copiar los archivos que están en la ruta:
+
+ C:\Users\Juancho\Desktop\TallerEA\TallerWAR\build\web
+
+2 - Pegarlos en:
+
+ C:\Users\Juancho\Desktop\TallerEA\TallerWAR\web
+
+3 - Clean & Build de TallerWAR
+
+4 - Clean & Build de TallerEJB
+
+5 - Borrar de los Servers las app están deployadas
+
+5 - Deploy de TallerEJB
+
+6 - Deploy de TallerWAR
+
+7 - Fijarse si en el mySQL están las tablas
+
+8 - Ingresar valores
+
+9 - Entrar en el Postman y poner lo siguiente:
+
+ GET: 
+	//TRAE TODO
+	- localhost:8080/TallerWAR/taller/autos/?id=1
+	//TRAE SÓLO EL INDICADO
+      	- localhost:8080/TallerWAR/taller/autos/1
+
+ PUT:
+
+	- localhost:8080/TallerWAR/taller/autos/?id=1&estado='AUX'

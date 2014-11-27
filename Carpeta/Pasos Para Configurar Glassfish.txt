@@ -1,0 +1,27 @@
+JMS Connection Factories
+
+JNDI Name: jms/ConnectionFactory
+Resource Type: javax.jms.QueueConnectionFactory
+
+JMS Destination Resources
+
+JNDI Name: jms/Queue
+Physical Destination Name: Queue
+Resource Type: javax.jms.Queue
+
+-------------------------------------------------
+
+JDBC Connection Pools
+
+Pool Name: bcmConnPool
+Resource Type: javax.sql.DataSource
+Database Driver Vendor: jdbc:mysql://localhost:3306/bcmshipping?zeroDateTimeBehavior=convertToNull
+Datasource Classname: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+url: jdbc:mysql://localhost:3306/bcmshipping?zeroDateTimeBehavior=convertToNull
+user: root
+pass: root
+
+JDBC Resources
+
+JDNI Name: jdbc/bcmShipping
+Pool Name: bcmConnPool

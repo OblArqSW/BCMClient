@@ -1,0 +1,14 @@
+--------------------------------------------------
+Estándar de JavaDoc - consultado el día 27/09/2014
+--------------------------------------------------
+http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html
+
+---------------------------------------------------------------
+Ejemplos del estándar de JavaDoc - consultado el día 27/09/2014
+---------------------------------------------------------------
+http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples
+
+-------------------------------------------------------------------
+Uso clase Calendar/GregorianCalendar - consultado el día 05/10/2014
+-------------------------------------------------------------------
+http://tutorials.jenkov.com/java-date-time/java-util-calendar.html
