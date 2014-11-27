@@ -52,7 +52,7 @@ public class WSClient {
 
     public boolean callWS() {
         Client client = ClientBuilder.newClient();
-        WebTarget myResource = client.target("http://localhost:8080/BCMShippingWAR/services/usuario/ext");
+        WebTarget myResource = client.target("http://localhost:8080/BCMShippingWAR/services/usuario/ext/Idffa061570ed304d915377b73558ef66c");
         String response = myResource.request(MediaType.APPLICATION_JSON)
                 .header("Content-Type", "application/json").get(String.class);
 
